@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, TextInput, Image } from "react-native";
-import { Header, ButtonGroup  } from "react-native-elements";
+import { Header, ButtonGroup, Card } from "react-native-elements";
 import CustomButton from './CustomButton';
 
 class UnivListPresenter extends Component {
@@ -12,51 +12,163 @@ class UnivListPresenter extends Component {
   render() {
     return (
         <View style={styles.container}>
-        <Header
-            backgroundImageStyle={{}}
-            barStyle="dark-content"
-            centerComponent={{
-                text: "2021학년도 대학교 원서접수",
-                style: { color: "#fff", fontSize:20 }
-            }}
-            centerContainerStyle={{}}
-            // containerStyle={{ width: 350 }}
-            leftComponent={{ icon: "menu", color: "#fff" }}
-            leftContainerStyle={{}}
-            // linearGradientProps={[]}
-            placement="center"
-            rightComponent={{ icon: "home", color: "#fff" }}
-            rightContainerStyle={{}}
-            statusBarProps={{}}
-        />
-        <View style={styles.content}>
-
-          <View style={styles.elem}>
-            <View style={styles.applyInfo}>
-              <View style={styles.UnivLogo}>
-              <Image
-                source={require("../../assets/logo/1108.png")}
+            <Header
+                backgroundImageStyle={{}}
+                barStyle="dark-content"
+                centerComponent={{
+                    text: "2021학년도 대학교 원서접수",
+                    style: { color: "#fff", fontSize:20 }
+                }}
+                centerContainerStyle={{}}
+                // containerStyle={{ width: 350 }}
+                leftComponent={{ icon: "menu", color: "#fff" }}
+                leftContainerStyle={{}}
+                // linearGradientProps={[]}
+                placement="center"
+                rightComponent={{ icon: "home", color: "#fff" }}
+                rightContainerStyle={{}}
+                statusBarProps={{}}
+            />
+            <View style={styles.content}>
+                <Image
+                source={require("../../assets/images/flowers.png")}
                 resizeMode="cover"
+                style={styles.backdrop}
                 />
-              </View>
-              <View>
-                <View style={styles.applySelMajor}>
-                    <Text style={styles.applySelMajorText}>IT특기자전형</Text>
-                    <Text style={styles.applySelMajorText}> &gt; </Text>
-                    <Text style={styles.applySelMajorText}>컴퓨터공학과</Text>
+                <View style={styles.elem}>
+                    <Card containerStyle={{}} wrapperStyle={{}}>
+                        <Image
+                        style={{ width: "100%", height: 100 }}
+                        resizeMode="contain"
+                        source={require("../../assets/logo/1108.gif")}
+                        />
+                        <Card.Divider />
+                        <View
+                            style={{
+                            position: "relative",
+                            alignItems: "center"
+                            }}
+                        >
+                        </View>
+                        <View style={styles.applyInfo}>
+                            <View style={styles.QRPrint}>
+                                <CustomButton 
+                                    buttonColor={'#023e71'}
+                                    title={'수험표'}
+                                    onPress={() => alert('QR코드 보여주기')}/>
+                            </View>
+                            <View>
+                                <View style={styles.applySelMajor}>
+                                    <Text style={styles.applySelMajorText}>IT특기자전형</Text>
+                                    <Text style={styles.applySelMajorText}> &gt; </Text>
+                                    <Text style={styles.applySelMajorText}>컴퓨터공학과</Text>
+                                </View>
+                                <Text style={styles.SuhumNo}>BOAA10001</Text>
+                            </View>
+                        </View>
+                    </Card>
                 </View>
-                <Text style={styles.SuhumNo}>BOAA10001</Text>
-              </View>
-            </View>
-            <View style={styles.QRPrint}>
-              <CustomButton 
-                buttonColor={'#023e71'}
-                title={'수험표'}
-                onPress={() => alert('QR코드 보여주기')}/>
-            </View>
-          </View>
+                <View style={styles.elem}>
+                    <Card containerStyle={{}} wrapperStyle={{}}>
+                        <Image
+                        style={{ width: "100%", height: 100 }}
+                        resizeMode="contain"
+                        source={require("../../assets/logo/1003.gif")}
+                        />
+                        <Card.Divider />
+                        <View
+                            style={{
+                            position: "relative",
+                            alignItems: "center"
+                            }}
+                        >
+                        </View>
+                        <View style={styles.applyInfo}>
+                            <View style={styles.QRPrint}>
+                                <CustomButton 
+                                    buttonColor={'#023e71'}
+                                    title={'수험표'}
+                                    onPress={() => alert('QR코드 보여주기')}/>
+                            </View>
+                            <View>
+                                <View style={styles.applySelMajor}>
+                                    <Text style={styles.applySelMajorText}>IT특기자전형</Text>
+                                    <Text style={styles.applySelMajorText}> &gt; </Text>
+                                    <Text style={styles.applySelMajorText}>컴퓨터공학과</Text>
+                                </View>
+                                <Text style={styles.SuhumNo}>BOAA10001</Text>
+                            </View>
+                        </View>
+                    </Card>
+                </View>
+                <View style={styles.elem}>
+                    <Card containerStyle={{}} wrapperStyle={{}}>
+                        <Image
+                        style={{ width: "100%", height: 100 }}
+                        resizeMode="contain"
+                        source={require("../../assets/logo/1025.gif")}
+                        />
+                        <Card.Divider />
+                        <View
+                            style={{
+                            position: "relative",
+                            alignItems: "center"
+                            }}
+                        >
+                        </View>
+                        <View style={styles.applyInfo}>
+                            <View style={styles.QRPrint}>
+                                <CustomButton 
+                                    buttonColor={'#023e71'}
+                                    title={'수험표'}
+                                    onPress={() => alert('QR코드 보여주기')}/>
+                            </View>
+                            <View>
+                                <View style={styles.applySelMajor}>
+                                    <Text style={styles.applySelMajorText}>IT특기자전형</Text>
+                                    <Text style={styles.applySelMajorText}> &gt; </Text>
+                                    <Text style={styles.applySelMajorText}>컴퓨터공학과</Text>
+                                </View>
+                                <Text style={styles.SuhumNo}>BOAA10001</Text>
+                            </View>
+                        </View>
+                    </Card>
+                </View>
+                <View style={styles.elem}>
+                    <Card containerStyle={{}} wrapperStyle={{}}>
+                        <Image
+                        style={{ width: "100%", height: 100 }}
+                        resizeMode="contain"
+                        source={require("../../assets/logo/1042.gif")}
+                        />
+                        <Card.Divider />
+                        <View
+                            style={{
+                            position: "relative",
+                            alignItems: "center"
+                            }}
+                        >
+                        </View>
+                        <View style={styles.applyInfo}>
+                            <View style={styles.QRPrint}>
+                                <CustomButton 
+                                    buttonColor={'#023e71'}
+                                    title={'수험표'}
+                                    onPress={() => alert('QR코드 보여주기')}/>
+                            </View>
+                            <View>
+                                <View style={styles.applySelMajor}>
+                                    <Text style={styles.applySelMajorText}>IT특기자전형</Text>
+                                    <Text style={styles.applySelMajorText}> &gt; </Text>
+                                    <Text style={styles.applySelMajorText}>컴퓨터공학과</Text>
+                                </View>
+                                <Text style={styles.SuhumNo}>BOAA10001</Text>
+                            </View>
+                        </View>
+                    </Card>
+                </View>
 
-          <View style={styles.elem}>
+          {/* <View style={styles.elem}>
             <View style={styles.applyInfo}>
             <View style={styles.UnivLogo}>
               <Image
@@ -79,7 +191,7 @@ class UnivListPresenter extends Component {
                 title={'수험표'}
                 onPress={() => alert('QR코드 보여주기')}/>
             </View>
-          </View>
+          </View> */}
 
         </View>
         <View style={styles.footer}>
@@ -131,22 +243,23 @@ const styles = StyleSheet.create({
     },
     content: {
       flex:1,
-      backgroundColor:'black',
+      backgroundColor:'white',
       borderRadius: 10,
       padding: 1
     },
     elem: {
       width: '100%',
-      flexDirection: 'row',
+      flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'space-between',
-      borderColor:'#eee',
-      borderBottomWidth:0.5,
-      padding: 5
+      borderColor:'#eee'
     },
     applyInfo: {
+      backgroundColor:'white',
       flexDirection: 'row',
       alignItems: 'center',
+      borderBottomWidth:0.5,
+      padding: 5
     },
     UnivLogo: {
       justifyContent: 'center',
@@ -161,11 +274,11 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
-      backgroundColor:'black',
+      backgroundColor:'white',
       borderRadius:5      
     },
     applySelMajorText: {
-        color: '#cccccc',
+        color: '#222',
         fontWeight: 'bold'
     },
     QRPrint: {
@@ -174,13 +287,29 @@ const styles = StyleSheet.create({
       width: 65,
       height: 65,
       borderRadius: 10,
-      backgroundColor: '#ffffff',
+      backgroundColor: 'orange',
     },
     SuhumNo: {
       paddingLeft: 10,
       fontSize: 20,
-      color: 'white'
-    }
+      color: 'black'
+    },
+    ApplyTitle: {
+      fontWeight: 'bold',
+      fontSize: 20,
+      color: 'black'
+    },
+    backdrop: { position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1, 
+    flexDirection: "column" 
+  }
+
   });
 
 export default UnivListPresenter;

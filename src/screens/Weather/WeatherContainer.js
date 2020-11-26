@@ -32,7 +32,7 @@ class WeatherContainer extends Component {
     return (
       <View style={styles.container}>
         <Image
-          source={require("./flowers.png")}
+          source={require("../../assets/images/flowers.png")}
           resizeMode="cover"
           style={styles.backdrop}
         />
